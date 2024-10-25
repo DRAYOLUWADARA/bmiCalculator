@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "daraProgram_backend": {
+      "main": "src/daraProgram_backend/main.mo",
+      "type": "motoko"
+    },
+    "daraProgram_frontend": {
+      "dependencies": [
+        "daraProgram_backend"
+      ],
+      "source": [
+        "src/daraProgram_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
